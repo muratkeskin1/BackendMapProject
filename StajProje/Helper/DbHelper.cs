@@ -213,7 +213,7 @@ namespace StajProje.Helper
         }
         public void EmailTest([Optional] IFormFile file, [Optional] ExcelPackage excelPackage)
         {
-            using MailMessage mm = new MailMessage("keskinmurat888@gmail.com", "legend918@hotmail.com");
+            using MailMessage mm = new MailMessage("", "");
             string body = "";
             body += "kapasite sıkıntısı olan atmlerin numaraları: " + DateTime.Now.ToString();
             for (int i = 0; i < arr.Count(); i++)
@@ -240,7 +240,7 @@ namespace StajProje.Helper
             }
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
-            NetworkCredential NetworkCred = new NetworkCredential("keskinmurat888@gmail.com", "iyzavjzketybhoer");
+            NetworkCredential NetworkCred = new NetworkCredential("", "");
             smtp.UseDefaultCredentials = false;
             smtp.Credentials = NetworkCred;
             smtp.Port = 587;
