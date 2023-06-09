@@ -17,9 +17,9 @@ namespace StajProje.Helper
         {
             Configuration = configuration;
             _redisConfiguration = new RedisEndpoint() {
-                Host = "internAppCache.redis.cache.windows.net",
-                Password = "cR4sAlS49v2nIsAdfkXeRhA8BHiu6fst6AzCaK60kFk=",
-                Port =6379
+                Host = "",
+                Password = "",
+                Port =0
             };
         }
         public void Set<T>(string key, T value, TimeSpan time) where T : class
